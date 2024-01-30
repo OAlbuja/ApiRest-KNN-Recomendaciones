@@ -35,8 +35,6 @@ Para poner en marcha la API en tu entorno local, sigue estos pasos:
 
 ## Diseño de Ingeniería
 
-## Diseño de Ingeniería
-
 ### Diagrama del Framework Spring Boot
 
 <img src="https://springframework.guru/wp-content/uploads/2015/04/spring-overview.png" width="600">
