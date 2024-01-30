@@ -35,13 +35,15 @@ Para poner en marcha la API en tu entorno local, sigue estos pasos:
 
 ## Diseño de Ingeniería
 
+## Diseño de Ingeniería
+
 ### Diagrama del Framework Spring Boot
 
-![Diagrama del Framework Spring Boot](https://springframework.guru/wp-content/uploads/2015/04/spring-overview.png)
+<img src="https://springframework.guru/wp-content/uploads/2015/04/spring-overview.png" width="600">
 
 ### Diagrama de Secuencia: Backend con Spring Boot y MySQL
 
-![Diagrama de Secuencia](https://showme.redstarplugin.com/d/d:20KsZDqt)
+<img src="https://showme.redstarplugin.com/d/d:20KsZDqt" width="600">
 
 #### Explicación del Diagrama
 
