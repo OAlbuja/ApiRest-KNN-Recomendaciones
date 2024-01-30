@@ -1,10 +1,37 @@
-# Backend de la Aplicación
+# API REST para Sistema de Recomendación KNN - Proyecto Estudiantil
 
-Este es el backend de la aplicación desarrollada con Spring Boot y Spring Expression Language (SpEL), con una base de datos MySQL. A continuación, se presenta una descripción del sistema, seguido de un diseño de ingeniería que incluye un diagrama del framework Spring Boot.
+## Descripción
 
-## Descripción del Sistema
+Este proyecto es una API REST desarrollada con Spring Boot, diseñada para un sistema de recomendación basado en el algoritmo K-Nearest Neighbors (KNN). El enfoque principal es la clasificación y recomendación de intereses comunes entre estudiantes y docentes en la carrera de software, proporcionando una herramienta útil para mejorar la interacción y el aprendizaje colaborativo.
 
-Este proyecto fue desarrollado utilizando Spring Boot y SpEL para habilitar la asignación dinámica de valores en tiempo de ejecución. El backend se enfoca en la gestión de clientes y productos a través de operaciones CRUD (Crear, Leer, Actualizar y Eliminar). Proporciona una interfaz de programación de aplicaciones (API) para que el frontend interactúe y administre datos eficientemente, utilizando una base de datos MySQL para almacenar y recuperar información.
+## Características Principales
+
+- **Implementación del Algoritmo KNN**: Utiliza el algoritmo KNN para ofrecer recomendaciones precisas y personalizadas.
+- **Normalización de Datos**: Incluye procesos de normalización para asegurar una comparación efectiva y justa de los datos.
+- **Escalabilidad y Adaptabilidad**: Diseñada para facilitar la incorporación de nuevos usuarios y la actualización continua de intereses.
+
+## Tecnologías Empleadas
+
+- **Spring Boot**: Framework robusto para el desarrollo de aplicaciones backend.
+- **Java**: Lenguaje de programación principal, conocido por su solidez y versatilidad.
+- **MySQL**: Sistema de gestión de base de datos para almacenar y manejar los datos de usuarios e intereses.
+- **Maven**: Herramienta para la gestión y automatización de proyectos Java.
+
+## Instalación y Ejecución
+
+Para poner en marcha la API en tu entorno local, sigue estos pasos:
+
+1. **Clonar el Repositorio**:
+   ```sh
+   git clone https://github.com/OAlbuja/ApiRest-KNN-Recomendaciones.git
+
+2. Navega hasta el directorio del proyecto y ejecuta:
+   ```sh
+   mvn clean install
+
+3. Inicia la aplicación:
+   ```sh
+   mvn spring-boot:run
 
 ## Diseño de Ingeniería
 
@@ -28,19 +55,39 @@ El diagrama representa la estructura del sistema backend desarrollado con Spring
 
 Este diseño de ingeniería garantiza una separación clara de responsabilidades y una arquitectura escalable para la aplicación Spring Boot.
 
-## Uso del Sistema
 
-Para poner en marcha el backend de la aplicación, se deben seguir estos pasos:
+## Uso
 
-1. Asegurarse de tener Java y Maven instalados en el sistema.
-2. Configurar una base de datos MySQL y ajustar la configuración de conexión en `src/main/resources/application.properties`.
-3. Ejecutar `mvn spring-boot:run` en la raíz del proyecto para iniciar el servidor de desarrollo.
-4. La API estará disponible en `http://localhost:8080/`. Se pueden utilizar herramientas como Postman o curl para interactuar con la API y realizar operaciones CRUD en clientes y productos.
+La API estará disponible en `http://localhost:8080/api`. Las rutas disponibles pueden incluir:
 
-## Pruebas
+- `/usuarios`: Para manejar la información de los usuarios.
+- `/recomendaciones`: Para obtener recomendaciones basadas en KNN.
 
-- Se pueden ejecutar pruebas unitarias utilizando el marco de pruebas proporcionado por Spring Boot.
-- Para realizar pruebas de integración, se debe configurar una base de datos de prueba y ajustar la configuración de prueba en `src/test/resources/application.properties`.
+## Ejemplo de Uso del Endpoint de Recomendaciones
+
+1. Para probar el endpoint de recomendaciones, puedes usar la siguiente URL en tu navegador o herramienta de API como Postman:
+   ```sh
+   http://localhost:8080/api/cliente-intereses/{clienteId}/recomendaciones?k={numeroDeVecinos}
+
+Donde {clienteId} es el ID del cliente para el que deseas obtener recomendaciones y {numeroDeVecinos} es el número de vecinos cercanos a considerar en el algoritmo KNN.
+
+2. Ejemplo: Si deseas obtener 5 recomendaciones para el cliente con ID 12, utilizarías:
+   ```sh
+   http://localhost:8080/api/cliente-intereses/12/recomendaciones?k=5
+
+Este request te devolverá una lista de recomendaciones basadas en los intereses comunes más cercanos del cliente especificado.
+
+## Contribuciones
+
+Las contribuciones son esenciales para el enriquecimiento continuo de este proyecto estudiantil. Cualquier sugerencia, idea de mejora o reporte de errores es bienvenido. Puedes abrir un issue o enviar un pull request para colaborar.
+
+## Licencia
+
+Este proyecto se desarrolla con fines académicos y no está sujeto a licencia comercial.
+
+## Autores
+
+- Oscar Albuja - Desarrollo Inicial
 
 ## Obtener Más Ayuda
 
