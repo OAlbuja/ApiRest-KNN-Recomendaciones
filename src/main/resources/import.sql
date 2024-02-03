@@ -29,6 +29,9 @@ INSERT INTO clientes (create_at, cedula, nombre, apellido, email, semestre_cursa
 INSERT INTO clientes (create_at, cedula, nombre, apellido, email, semestre_cursado) VALUES ('2023-02-21', '1720000019', 'CAMILA', 'CABRERA', 'CAMILA.CABRERA.TAPIA@UDLA.EDU.EC', 4);
 INSERT INTO clientes (create_at, cedula, nombre, apellido, email, semestre_cursado) VALUES ('2023-08-30', '1720000020', 'OSCAR', 'ALBUJA', 'OSCAR.ALBUJA@UDLA.EDU.EC', 4);
 INSERT INTO clientes (create_at, cedula, nombre, apellido, email, semestre_cursado) VALUES ('2023-05-26', '1720000021', 'MARIA', 'JIMENEZ', 'MARIACRISTINA.JIMENEZ@UDLA.EDU.EC', 4);
+INSERT INTO clientes (create_at, cedula, nombre, apellido, email, semestre_cursado) VALUES ('2023-05-26', '1721544052', 'FABRICIO', 'MORA', 'FABRICIO.MORA.TORRES@UDLA.EDU.EC', 8);
+INSERT INTO clientes (create_at, cedula, nombre, apellido, email, semestre_cursado) VALUES ('2023-05-26', '0503483489', 'SANDRA', 'MENESES', 'SANDRA.MENESES@UDLA.EDU.EC', 9);
+INSERT INTO clientes (create_at, cedula, nombre, apellido, email, semestre_cursado) VALUES ('2023-05-26', '1721544052', 'DAVID', 'ALBUJA', 'DAVID.ALBUJA@UDLA.EDU.EC', 9);
 
 
 /* POPULATE TABLA CLIENTES (DATOS PRUEBA)*/
@@ -57,6 +60,9 @@ INSERT INTO cliente_roles (cliente_id, rol_id) VALUES (19, 3);
 INSERT INTO cliente_roles (cliente_id, rol_id) VALUES (20, 3);
 -- Asociar MARÍA JIMÉNEZ con el rol DOCENTE
 INSERT INTO cliente_roles (cliente_id, rol_id) VALUES (21, 2);
+INSERT INTO cliente_roles (cliente_id, rol_id) VALUES (22, 3);
+INSERT INTO cliente_roles (cliente_id, rol_id) VALUES (23, 3);
+INSERT INTO cliente_roles (cliente_id, rol_id) VALUES (24, 3);
 
 
 /* POPULATE TABLA INTERESES */
@@ -119,6 +125,21 @@ INSERT INTO intereses (nombre) VALUES ('Intercambio de experiencias y prácticas
 INSERT INTO intereses (nombre) VALUES ('Mentoría y tutoría mutua');
 INSERT INTO intereses (nombre) VALUES ('Compartir recursos y herramientas útiles');
 INSERT INTO intereses (nombre) VALUES ('Participar en proyectos de investigación o desarrollo colaborativo');
+
+--Experimentacion intereses enfermeria
+
+INSERT INTO intereses (nombre) VALUES ('Atencion primaria de salud');
+INSERT INTO intereses (nombre) VALUES ('Cuidados intensivos y criticos');
+INSERT INTO intereses (nombre) VALUES ('Salud publica y epidemiologia');
+INSERT INTO intereses (nombre) VALUES ('Gestion y administracion en salud');
+INSERT INTO intereses (nombre) VALUES ('Investigacion en enfermeria');
+INSERT INTO intereses (nombre) VALUES ('Salud mental y psiquiatria');
+INSERT INTO intereses (nombre) VALUES ('Pediatria y cuidado neonatal');
+INSERT INTO intereses (nombre) VALUES ('Geriatria y cuidado del adulto mayor');
+INSERT INTO intereses (nombre) VALUES ('Urgencias y emergencias medicas');
+INSERT INTO intereses (nombre) VALUES ('Educacion para la salud y promocion del bienestar');
+
+
 
 /* INSERTs para cliente ID 1: MARIA VAZCONES */
 INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-07-20', 1, 3, 10);  -- Inteligencia artificial y aprendizaje automático
@@ -373,3 +394,39 @@ INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) V
 INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 21, 31, 5); -- Acceso a herramientas de desarrollo y software profesional
 INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 21, 33, 2); -- Conferencias y seminarios
 INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 21, 39, 4); -- Compartir recursos y herramientas útiles
+
+/* INSERTs para cliente ID 22: FABRICIO MORA */
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2024-02-02', 22, 3, 8); -- Inteligencia artificial y aprendizaje automático
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2024-02-02', 22, 7, 8); -- Scrum
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2024-02-02', 22, 11, 7); -- Python
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2024-02-02', 22, 14, 10); -- Eclipse
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2024-02-02', 22, 17, 10); -- Esencial para el éxito del proyecto
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2024-02-02', 22, 21, 7); -- Programación en lenguajes específicos
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2024-02-02', 22, 27, 8); -- Investigación en inteligencia artificial y aprendizaje automático
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2024-02-02', 22, 29, 7); -- Acceso a cursos y tutoriales en línea
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2024-02-02', 22, 34, 9); -- Talleres y sesiones de formación
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2024-02-02', 22, 37, 10); -- Intercambio de experiencias y prácticas en proyectos
+
+/* INSERTs para cliente ID 22: SANDRA MENESES */
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 23, 41, 10); -- Atención primaria de salud
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 23, 42, 6); -- Cuidados intensivos y críticos
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 23, 43, 5); -- Salud pública y epidemiología
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 23, 44, 10); -- Gestión y administración en salud
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 23, 45, 7); -- Investigación en enfermería
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 23, 46, 7); -- Salud mental y psiquiatría
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 23, 47, 8); -- Pediatría y cuidado neonatal
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 23, 48, 5); -- Geriatría y cuidado del adulto mayor
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 23, 49, 9); -- Urgencias y emergencias médicas
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 23, 50, 4); -- Educación para la salud y promoción del bienestar
+
+/* INSERTs para cliente ID 23: DAVID ALBUJA */
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 24, 41, 10); -- Atención primaria de salud
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 24, 42, 6); -- Cuidados intensivos y críticos
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 24, 43, 5); -- Salud pública y epidemiología
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 24, 44, 1); -- Gestión y administración en salud
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 24, 45, 5); -- Investigación en enfermería
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 24, 46, 7); -- Salud mental y psiquiatría
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 24, 47, 4); -- Pediatría y cuidado neonatal
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 24, 48, 9); -- Geriatría y cuidado del adulto mayor
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 24, 49, 2); -- Urgencias y emergencias médicas
+INSERT INTO cliente_intereses (create_at, cliente_id, interes_id, ponderacion) VALUES ('2023-05-26', 24, 50, 4); -- Educación para la salud y promoción del bienestar
