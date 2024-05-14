@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este proyecto es una API REST desarrollada con Spring Boot, diseñada para un sistema de recomendación basado en el algoritmo K-Nearest Neighbors (KNN). El enfoque principal es la clasificación y recomendación de intereses comunes entre estudiantes y docentes en la carrera de software, proporcionando una herramienta útil para mejorar la interacción y el aprendizaje colaborativo.
+El proyecto es una API REST desarrollada con Spring Boot, diseñada para un sistema de recomendación basado en el algoritmo K-Nearest Neighbors (KNN). El enfoque principal es la clasificación y recomendación de intereses comunes entre estudiantes y docentes en la carrera de software, proporcionando una herramienta útil para mejorar la interacción y el aprendizaje colaborativo.
 
 ## Características Principales
 
